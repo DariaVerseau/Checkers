@@ -18,10 +18,6 @@ class Piece:
 
         self.x = 0
         self.y = 0
-
-
-        self.x = 0
-        self.y = 0
         self.calc_pos()
 
     def calc_pos(self):
