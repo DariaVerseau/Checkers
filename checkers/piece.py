@@ -1,5 +1,5 @@
 import pygame
-from .constants import SQUARE_SIZE, GREY, CROWN, MILK
+from .constants import SQUARE_SIZE, GREY, CROWN
 
 class Piece:
     PADDING = 15
@@ -9,13 +9,7 @@ class Piece:
         self.row = row
         self.col = col
         self.color = color
-        self.king = True
-
-        if self.color == MILK:
-            self.direction = -1
-        else:
-            self.direction = 1
-
+        self.king = False
         self.x = 0
         self.y = 0
         self.calc_pos()
