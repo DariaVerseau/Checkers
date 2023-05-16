@@ -2,6 +2,7 @@ import pygame
 from checkers.constants import WIDTH, HEIGHT, SQUARE_SIZE
 from checkers.game import Game
 
+
 FPS = 60
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -29,6 +30,7 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
 
+
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
                 row, col = get_row_col_from_mouse(pos)
@@ -37,5 +39,6 @@ def main():
         game.update()
 
     pygame.quit()
+
 
 main()
